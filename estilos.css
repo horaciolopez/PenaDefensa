@@ -1,0 +1,166 @@
+* {
+    background-color: green;
+
+}
+b{
+    text-align: center;
+    margin: 300px;
+    font-size: xx-large;
+}
+h1 {
+
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+img{
+    width: 100px;
+    border-style: double;
+    display: block;
+    margin: auto;
+
+}
+/* Selectores avanzados */
+h1, h2, h3, p {
+    color: darkorange;
+}
+/*adyacente*/
+h2 + p {
+    color: blue;
+}
+/*general de hermanos*/
+h3 ~ p {
+    color: deepskyblue;
+
+}
+/*Pseudoclases*/
+ul li:first-child{
+    color: red;
+    background-color: olive;
+}
+ul li:last-child{
+    color: blue;
+    background-color: yellow;
+}
+.links{
+    font: 1em sans-serif;;
+    color: blue;
+    border: 1px black;
+    background-color: lightgreen;
+}
+p::first-letter{
+    color: red;
+    background-color: aliceblue;
+}
+p ::selection{
+    background-color: aqua;
+    color: violet;
+}
+p ::before{ content: ✔;}
+p ::selection{content: 😊;}
+
+/* Transformaciones,animaciones y transcisiones
+.inicio {
+    transform: translate(5g);
+    scale: 2,2;
+    translate: 20px 40px;
+}
+
+/*Atajo: Transcisiones*/
+li {
+    transition: all 0.2s ease-in;
+}
+/* Fotogramas(keyframes)
+li{
+    text-align: center;
+    display: block;
+    border: 1px solid black;
+    margin: 15px auto;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+@keyframes cambiarColor{
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+*/
+li {
+    width: 960px;
+    border: 1px solid black;
+    margin: 15px auto;
+    text-align: center;
+    padding: auto;
+    
+}
+tr th{
+    background-color: yellow;
+}
+
+
+/*Bordes - Atajos*/
+div{
+    border: 1px solid blue;
+}
+*/
+
+/* Posicionamiento relativo (relative)
+*/
+.contenedor{
+    position: relative;
+    left: 30px;
+    top: 10px;
+    border: 2px solid blue;
+    background-color: lightblue;
+    width: 300px;
+    height: 100px;
+    margin: 0px;
+}
+.box {
+    position: absolute;
+    width: 100px;
+    height: 140px;
+    border: 2px solid black;
+    opacity: 90%;
+}
+/*Flexbox Modalidades de flex*/
+.container {
+    display: flex;
+    flex-direction: column;
+    background: steelblue;
+  }
+  
+  .item {
+    background: grey;
+  }
+/*------------------------------------*/
+h2 {
+    font-size: 10px;
+    font-weight: 100;
+    font-style: italic;
+}
+/* Media Queries*/
+/*Puntos de corte (Breakpoints)*/
+.example{
+    padding: 20px;
+    color: white;
+
+}
+@media only screen and(max-widht: 600px){
+    .example{background:  red;}
+}
+    
+/* Pseudoclases para hipervinculos*/
+
+a:link {
+    color: darkgoldenrod;
+}
+
+.turno {
+    color: #fff;
+    font-weight: bold;
+}
